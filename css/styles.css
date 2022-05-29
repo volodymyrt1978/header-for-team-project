@@ -97,25 +97,35 @@ a {
     top: 10px;
     right: 15px;
     
-    display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-}
-
-.menu-button__icon--close {
-    display: none;
+    cursor: pointer;
 }
 
 .menu-button.is-open {
     position: fixed;
 }
 
+.menu-button__icon--close {
+    transform: scale(0);
+    transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-button.is-open .menu-button__icon--close {
     display: block;
+    transform: scale(1);
+}
+.menu-button .menu-button__icon--open {
+    transform: scale(1);
+    transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-button.is-open .menu-button__icon--open {
-    display: none;
+    transform: scale(0);
 }
