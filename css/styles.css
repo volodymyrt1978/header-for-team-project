@@ -64,6 +64,16 @@ a {
     position: relative;
 }
 
+.logo {
+    width: 96px;
+    height: 44px;
+}
+
+.logo__menu {
+    width: 190px;
+    height: 85px;
+}
+
 .menu-container {
     position: fixed;
     display: flex;
@@ -94,8 +104,8 @@ a {
 .menu-button {
     position: absolute;
     z-index: 2;
-    top: 10px;
-    right: 15px;
+    top: 16px;
+    right: 0px;
     
     margin: 0;
     padding: 0;
@@ -105,8 +115,20 @@ a {
 }
 
 .menu-button.is-open {
-    position: fixed;
+    top: 20px;
+    right: 0px;
 }
+
+.menu-button__icon--size {
+    width: 30px;
+    height: 16px;
+}
+
+.menu-button.is-open .menu-button__icon--size {
+    width: 18px;
+    height: 18px;
+}
+
 
 .menu-button__icon--close {
     transform: scale(0);
@@ -119,7 +141,10 @@ a {
     display: block;
     transform: scale(1);
 }
+
+
 .menu-button .menu-button__icon--open {
+   
     transform: scale(1);
     transition-property: transform;
         transition-duration: 0.5s;

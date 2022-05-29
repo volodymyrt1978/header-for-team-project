@@ -23,7 +23,7 @@
             <div class="container">
         
                 <a href="">
-                    <svg>
+                    <svg class="logo">
                         <use href="./images/icons.svg#icon-logo"></use>
                     </svg>
                 </a>
@@ -32,8 +32,9 @@
                         aria-expanded="false"
                         aria-controls="menu-container"  
                         data-menu-button>
-                            <svg
-                                aria-label="Mobile menu switcher">
+                            <svg class="menu-button__icon--size" 
+                            aria-label="Mobile menu switcher"
+                            >
                                 <use class="menu-button__icon--close" href="./images/icons.svg#icon-close"></use>    
                                 <use class="menu-button__icon--open" href="./images/icons.svg#icon-menu"></use>
                             </svg>
@@ -41,20 +42,42 @@
             
                 <nav class="menu-container" data-menu>
                     <a href="">
-                        <svg>
+                        <svg class="logo__menu">
                             <use href="./images/icons.svg#icon-logo"></use>
                         </svg>
                     </a>
 
                     <ul class="site-nav">
-                        <li class="site-nav__item"><a href="">About us</a></li>
-                        <li class="site-nav__item"><a href="">Program</a></li>
-                        <li class="site-nav__item"><a href="">Reviews</a></li>
-                        <li class="site-nav__item"><a href="">Contacts</a></li>
+                        <li class="site-nav__item"><a href="#About us">About us</a></li>
+                        <li class="site-nav__item"><a href="#Program">Program</a></li>
+                        <li class="site-nav__item"><a href="#Reviews">Reviews</a></li>
+                        <li class="site-nav__item"><a href="#Contacts">Contacts</a></li>
                     </ul>
                 </nav>
        
             </div>
     </header>
+    <main>
+        <section>
+            <a name="About us"></a>
+            <h2>About us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit est ut iusto molestias, nesciunt accusamus non, nihil placeat veritatis magni corporis corrupti ipsam sit optio recusandae, consequatur velit debitis quis?</p>
+        </section>
+        <section>
+            <a name="Program"></a>
+            <h2>Program</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit est ut iusto molestias, nesciunt accusamus non, nihil placeat veritatis magni corporis corrupti ipsam sit optio recusandae, consequatur velit debitis quis?</p>
+        </section>
+        <section>
+            <a name="Reviews"></a>
+            <h2>Reviews</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit est ut iusto molestias, nesciunt accusamus non, nihil placeat veritatis magni corporis corrupti ipsam sit optio recusandae, consequatur velit debitis quis?</p>
+        </section>
+        <section>
+            <a name="Contacts"></a>
+            <h2>Contacts</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit est ut iusto molestias, nesciunt accusamus non, nihil placeat veritatis magni corporis corrupti ipsam sit optio recusandae, consequatur velit debitis quis?</p>
+        </section>
+    </main>
     <script src="./js/mobile-menu.js"></script>
 </body>
