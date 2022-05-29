@@ -19,41 +19,42 @@
   </head>
   
   <body>
-      <header>
-    <div class="container">
+    <header class="header">
+            <div class="container">
         
-        <a href="">
-            <svg>
-                <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-        </a>
-
-        <button type="button"
-                aria-expanded="false"
-                aria-controls="menu-container"  
-                data-menu-button>
-                    <svg
-                        aria-label="Mobile menu switcher">
-                            <use href="./images/icons.svg#icon-menu"></use>
-                            <use href="./images/icons.svg#icon-close"></use>
+                <a href="">
+                    <svg>
+                        <use href="./images/icons.svg#icon-logo"></use>
                     </svg>
-        </button>
-            
-        <nav>
-            <a href="">
-                <svg>
-                    <use href="./images/icons.svg#icon-logo"></use>
-                </svg>
-            </a>
+                </a>
 
-            <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Program</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </nav>
+                <button type="button" class="menu-button"
+                        aria-expanded="false"
+                        aria-controls="menu-container"  
+                        data-menu-button>
+                            <svg
+                                aria-label="Mobile menu switcher">
+                                <use class="menu-button__icon--close" href="./images/icons.svg#icon-close"></use>    
+                                <use class="menu-button__icon--open" href="./images/icons.svg#icon-menu"></use>
+                            </svg>
+                </button>
+            
+                <nav class="menu-container" data-menu>
+                    <a href="">
+                        <svg>
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a href="">About us</a></li>
+                        <li class="site-nav__item"><a href="">Program</a></li>
+                        <li class="site-nav__item"><a href="">Reviews</a></li>
+                        <li class="site-nav__item"><a href="">Contacts</a></li>
+                    </ul>
+                </nav>
        
-    </div>
-</header>
+            </div>
+    </header>
+    <script src="./js/mobile-menu.js"></script>
 </body>
