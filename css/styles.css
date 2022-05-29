@@ -105,7 +105,7 @@ a {
     position: absolute;
     z-index: 2;
     top: 16px;
-    right: 0px;
+    right: 20px;
     
     margin: 0;
     padding: 0;
@@ -116,7 +116,7 @@ a {
 
 .menu-button.is-open {
     top: 20px;
-    right: 0px;
+    
 }
 
 .menu-button__icon--size {
