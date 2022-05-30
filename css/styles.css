@@ -154,3 +154,7 @@ a {
 .menu-button.is-open .menu-button__icon--open {
     transform: scale(0);
 }
+
+body.mobile-menu__open {
+    overflow: hidden;
+}
