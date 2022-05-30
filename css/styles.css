@@ -63,7 +63,7 @@ a {
 .header {
     position: relative;
     padding-top: 8px;
-    background-color: #FEF3E4;
+    /* background-color: #FEF3E4; */
 }
 
 .logo {
