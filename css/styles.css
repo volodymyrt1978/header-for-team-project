@@ -195,3 +195,12 @@ body.mobile-menu__open {
 .menu__link:visited {
     color:#674D40;
 }
+
+.bg-image__top {
+    background-image: url('/images/bg-up--mobile.png'), url('/images/bg-down--mobile.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, left bottom;
+
+   
+}
+
